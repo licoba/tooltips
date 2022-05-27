@@ -56,20 +56,20 @@ class ToolTipBackgroundConstructor {
     private static void setToolTipAboveBackground(View tipView, ToolTip toolTip) {
         switch (toolTip.getAlign()) {
             case ToolTip.ALIGN_CENTER:
-                setTipBackground(tipView, R.drawable.tooltip_arrow_down, toolTip.getBackgroundColor());
+                setTipBackground(tipView, R.drawable.tooltip_arrow_white_down_medium, toolTip.getBackgroundColor());
                 break;
             case ToolTip.ALIGN_LEFT:
                 setTipBackground(tipView,
                         !UiUtils.isRtl() ?
-                                R.drawable.tooltip_arrow_down_left :
-                                R.drawable.tooltip_arrow_down_right
+                                R.drawable.tooltip_arrow_white_down_left :
+                                R.drawable.tooltip_arrow_white_down_right
                         , toolTip.getBackgroundColor());
                 break;
             case ToolTip.ALIGN_RIGHT:
                 setTipBackground(tipView,
                         !UiUtils.isRtl() ?
-                                R.drawable.tooltip_arrow_down_right :
-                                R.drawable.tooltip_arrow_down_left
+                                R.drawable.tooltip_arrow_white_down_right :
+                                R.drawable.tooltip_arrow_white_down_left
                         , toolTip.getBackgroundColor());
                 break;
         }
@@ -79,20 +79,20 @@ class ToolTipBackgroundConstructor {
 
         switch (toolTip.getAlign()) {
             case ToolTip.ALIGN_CENTER:
-                setTipBackground(tipView, R.drawable.tooltip_arrow_up, toolTip.getBackgroundColor());
+                setTipBackground(tipView, R.drawable.tooltip_arrow_white_up_medium, toolTip.getBackgroundColor());
                 break;
             case ToolTip.ALIGN_LEFT:
                 setTipBackground(tipView,
                         !UiUtils.isRtl() ?
-                                R.drawable.tooltip_arrow_up_left :
-                                R.drawable.tooltip_arrow_up_right
+                                R.drawable.tooltip_arrow_white_up_left :
+                                R.drawable.tooltip_arrow_white_up_right
                         , toolTip.getBackgroundColor());
                 break;
             case ToolTip.ALIGN_RIGHT:
                 setTipBackground(tipView,
                         !UiUtils.isRtl() ?
-                                R.drawable.tooltip_arrow_up_right :
-                                R.drawable.tooltip_arrow_up_left
+                                R.drawable.tooltip_arrow_white_up_right :
+                                R.drawable.tooltip_arrow_white_up_left
                         , toolTip.getBackgroundColor());
                 break;
         }
@@ -101,13 +101,13 @@ class ToolTipBackgroundConstructor {
 
     private static void setToolTipLeftToBackground(View tipView, int color) {
         setTipBackground(tipView, !UiUtils.isRtl() ?
-                        R.drawable.tooltip_arrow_right : R.drawable.tooltip_arrow_left,
+                        R.drawable.tooltip_arrow_white_right : R.drawable.tooltip_arrow_white_left,
                 color);
     }
 
     private static void setToolTipRightToBackground(View tipView, int color) {
         setTipBackground(tipView, !UiUtils.isRtl() ?
-                        R.drawable.tooltip_arrow_left : R.drawable.tooltip_arrow_right,
+                        R.drawable.tooltip_arrow_white_left : R.drawable.tooltip_arrow_white_right,
                 color);
     }
 
