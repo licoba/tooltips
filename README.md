@@ -1,6 +1,10 @@
 # Tooltips
 
-Simple to use library for android, Enabling to add a tooltip near any view with ease
+### 怎么发布自己的库
+
+https://zhuanlan.zhihu.com/p/507980481
+
+> Simple to use library for android, Enabling to add a tooltip near any view with ease
 
 <img src="https://user-images.githubusercontent.com/99822/38155597-a5e9f4bc-3446-11e8-8db1-4dbd670584f5.gif" width="180" height="320"/> <img src="https://user-images.githubusercontent.com/99822/38155596-a5d9990a-3446-11e8-9b88-5b6ba2f45ac4.gif" width="180" height="320"/>
 
