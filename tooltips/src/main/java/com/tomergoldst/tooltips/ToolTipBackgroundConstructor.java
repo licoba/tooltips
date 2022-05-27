@@ -115,13 +115,13 @@ class ToolTipBackgroundConstructor {
         setTipBackground(tipView, R.drawable.tooltip_no_arrow, color);
     }
 
-    private static void setTipBackground(View tipView, int drawableRes, int color){
+    private static void setTipBackground(View tipView, int drawableRes, int color) {
         Drawable paintedDrawable = getTintedDrawable(tipView.getContext(),
                 drawableRes, color);
         setViewBackground(tipView, paintedDrawable);
     }
 
-    private static void setViewBackground(View view, Drawable drawable){
+    private static void setViewBackground(View view, Drawable drawable) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             view.setBackground(drawable);
         } else {
@@ -129,16 +129,16 @@ class ToolTipBackgroundConstructor {
         }
     }
 
-    private static Drawable getTintedDrawable(Context context, int drawableRes, int color){
+    private static Drawable getTintedDrawable(Context context, int drawableRes, int color) {
         Drawable drawable;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             drawable = context.getResources().getDrawable(drawableRes, null);
-            if (drawable != null) {
+            if (drawable != null && color != -1) {
                 drawable.setTint(color);
             }
         } else {
             drawable = context.getResources().getDrawable(drawableRes);
-            if (drawable != null) {
+            if (drawable != null && color != -1) {
                 drawable.setColorFilter(color, PorterDuff.Mode.SRC_ATOP);
             }
         }

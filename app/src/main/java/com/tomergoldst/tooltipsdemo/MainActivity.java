@@ -161,6 +161,7 @@ public class MainActivity extends Activity implements
                 builder = new ToolTip.Builder(this, mTextView, mRootLayout, text, ToolTip.POSITION_ABOVE);
                 builder.setAlign(mAlign);
                 builder.setTypeface(mCustomFont);
+                builder.setTextAppearance(R.style.TooltipTextAppearance);
                 mToolTipsManager.show(builder.build());
                 break;
             case R.id.button_below:

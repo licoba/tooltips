@@ -239,7 +239,7 @@ public class ToolTip {
             mOffsetX = 0;
             mOffsetY = 0;
             mArrow = true;
-            mBackgroundColor = context.getResources().getColor(R.color.colorBackground);
+            mBackgroundColor = -1;
             mTextGravity = GRAVITY_LEFT;
             mTextAppearanceStyle = R.style.TooltipDefaultStyle;
             mMaxWidth = 0;
